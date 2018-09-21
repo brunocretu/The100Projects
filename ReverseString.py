@@ -13,7 +13,7 @@ def main():
 
 		loop = input('Do you wish to reverse any other string? (Y|N) ')
 
-		if loop == 'N' or loop == 'no' or loop = 'No':
+		if loop == 'N' or loop == 'no' or loop = 'No' or loop == 'n':
 			break
 
 if __name__ == '__main__':
