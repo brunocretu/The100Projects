@@ -5,16 +5,16 @@
 
 from ftplib import FTP
 
-#address = input("Server address: ")
-#port = input("Server port: ")
+address = input("Server address: ")
+port = input("Server port: ")
 #username = input("Username: ")
 #password = input("Password: ")
-#path = input('Client folder: ')
+path = input('Client folder: ')
 
 ftp = FTP('')
-ftp.connect('localhost', 1026)
+ftp.connect(address, port)
 ftp.login()
-ftp.cwd('/Documents/The100Projects')
+ftp.cwd(path)
 ftp.retrlines('LIST')
 
 def uploadFile():
